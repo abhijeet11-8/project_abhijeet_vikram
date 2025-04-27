@@ -59,7 +59,6 @@ python predict.py
 
 ```
 .
-├──
 ├── config.py          # Configuration file (hyperparameters, loss functions)
 ├── dataset.py         # Data loading and preprocessing
 ├── interface.py       # Main script for training and validation
@@ -67,6 +66,7 @@ python predict.py
 ├── predict.py         # Script for testing and predictions
 ├── train.py           # Training utilities
 ├── test.py            # Testing utilities
+├── Test.zip           # Example data from FER2013 dataset randomly chosen for each emotion
 ├── val.py             # Validation utilities
 ├── utils.py           # Helper functions (e.g., saving/loading models)
 ├── final_weights_new.pth  # Pre-trained model weights
