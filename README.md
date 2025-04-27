@@ -24,6 +24,7 @@ This repository contains a deep learning-based project for emotion recognition f
 - **Validation and Testing**: Includes metrics like accuracy and loss.
 - **Preprocessing**: Grayscale conversion, resizing, and normalization of images.
 - **Checkpointing**: Saves the best model during training.
+- **Early stopping**: Stops the model ealy to prevent overfitting or too much loss.
 
 ---
 
@@ -34,13 +35,7 @@ This repository contains a deep learning-based project for emotion recognition f
    git clone https://github.com/your-username/emotion-recognition.git
    cd emotion-recognition
    ```
-
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Ensure you have PyTorch installed. Refer to the [PyTorch installation guide](https://pytorch.org/get-started/locally/) for your system.
+2. Ensure you have PyTorch installed. Refer to the [PyTorch installation guide](https://pytorch.org/get-started/locally/) for your system.
 
 ---
 
@@ -64,6 +59,7 @@ python predict.py
 
 ```
 .
+├──
 ├── config.py          # Configuration file (hyperparameters, loss functions)
 ├── dataset.py         # Data loading and preprocessing
 ├── interface.py       # Main script for training and validation
@@ -112,7 +108,7 @@ The project includes two model architectures:
 1. **ImprovedFER2013Model**: A deeper model with residual blocks and global average pooling.
 2. **TheModel**: A simpler model with two convolutional layers and fully connected layers.
 
-The default model used is `TheModel`.
+The default model used is `TheModel`. - both had similar performance but TheModel showed better features reading than the earlier
 
 ---
 
